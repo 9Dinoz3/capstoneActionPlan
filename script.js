@@ -4,7 +4,7 @@ function showSection(sectionId) {
     sections[i].style.display = 'none';
   }
   
-  document.getElementById(sectionId).style.display = '';
+  document.getElementById(sectionId).style.display = 'block';
 }
 
 showSection('home');

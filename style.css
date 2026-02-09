@@ -61,6 +61,10 @@ button:hover {
   animation: fadeIn 0.5s ease-in;
 }
 
+.section.active {
+  display: block;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

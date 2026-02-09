@@ -12,7 +12,6 @@ h2 {
   text-align: center;
   font-size: 30px;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 h3 {
@@ -20,12 +19,14 @@ h3 {
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 p {
   text-indent: 50px;
   margin-left: 15px;
   margin-right: 15px;
+  line-height: 1.8;
 }
 
 nav {
@@ -50,4 +51,104 @@ button:hover {
 
 .section {
   display: none;
+}
+
+.hook {
+  font-size: 28px;
+  line-height: 1.4;
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+  color: #00d4ff;
+  font-weight: normal;
+  animation: fadeIn 1s ease-in;
+}
+
+.stat-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+  border: 5px solid transparent;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card.negative {
+  border-color: #ff3366;
+  box-shadow: 0 4px 20px rgba(255, 51, 102, 0.2);
+}
+
+.stat-card.positive {
+  border-color: #00ff88;
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.2);
+}
+
+.stat-number {
+  display: block;
+  font-size: 56px;
+  font-weight: bold;
+  font-family: "Lucida Console", monospace;
+  margin-bottom: 10px;
+}
+
+.stat-card.negative .stat-number {
+  color: #ff3366;
+}
+
+.stat-card.positive .stat-number {
+  color: #00ff88;
+}
+
+.stat-label {
+  display: block;
+  font-size: 14px;
+  color: #b8c5d6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-vs {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Lucida Console", monospace;
+}
+
+.stat-conclusion {
+  max-width: 800px;
+  margin: 30px auto;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.6;
+  text-indent: 0;
+}
+
+.highlight-green {
+  color: #00ff88;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.section {
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

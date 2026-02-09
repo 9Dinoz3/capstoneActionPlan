@@ -37,20 +37,44 @@ nav {
 
 button {
   padding: 15px 30px;
-  background: #000080;
-  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  min-width: 200px;
+  border: 5px solid;
+  border-color: #000080;
   color: white;
   font-family: "Lucida Console", "Courier New", monospace;
   font-size: 20px;
+  transition: transform 0.3s ease;
 }
 
 button:hover {
-  background: #0000c0;
+  border-color: #0000c0;
   cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 106, 128, 0.15);
 }
 
 .section {
   display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid rgba(0, 212, 255, 0.3);
+  margin: 50px auto;
+  max-width: 600px;
 }
 
 .hook {
@@ -61,7 +85,6 @@ button:hover {
   text-align: center;
   color: #00d4ff;
   font-weight: normal;
-  animation: fadeIn 1s ease-in;
 }
 
 .stat-grid {
@@ -137,18 +160,151 @@ button:hover {
   text-indent: 0;
 }
 
-.highlight-green {
+.success-box {
+  background: rgba(0, 255, 136, 0.1);
+  border-left: 4px solid #00ff88;
+  padding: 25px 35px;
+  margin: 40px auto;
+  max-width: 850px;
+  border-radius: 5px;
+}
+
+.success-box h4 {
+  margin-top: 0;
+  color: #00ff88;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.success-box p {
+  text-indent: 0;
+  margin-left: 0;
+  margin-bottom: 15px;
+  color: #e8e8e8;
+  line-height: 1.8;
+}
+
+.success-box p:last-child {
+  margin-bottom: 0;
+}
+
+.success-box em {
+  color: #00d4ff;
+  font-style: italic;
+}
+
+.success-box strong {
+  color: #00ff88;
+}
+
+.explore-section {
+  margin: 60px auto;
+  max-width: 1000px;
+}
+
+.explore-intro {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+  text-indent: 0;
+  color: #b8c5d6;
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 40px auto;
+}
+
+@media (max-width: 768px) {
+  .explore-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.explore-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(0, 212, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.explore-card:hover {
+  border-color: #00d4ff;
+  background: rgba(0, 212, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+.explore-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.explore-card h4 {
+  color: #00d4ff;
+  font-size: 24px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.explore-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #e8e8e8;
+  margin: 15px 0;
+  text-indent: 0;
+  text-align: left;
+}
+
+.explore-cta {
+  display: inline-block;
+  margin-top: 15px;
   color: #00ff88;
   font-weight: bold;
-  font-size: 22px;
+  font-family: "Lucida Console", monospace;
+  font-size: 16px;
 }
 
-.section {
-  display: none;
-  animation: fadeIn 0.5s ease-in;
+.explore-card:hover .explore-cta {
+  color: #00d4ff;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.final-cta {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.final-cta p {
+  font-size: 20px;
+  color: #b8c5d6;
+  margin-bottom: 25px;
+  text-indent: 0;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #00d4ff, #0066ff);
+  border: none;
+  color: white;
+  padding: 18px 40px;
+  font-size: 20px;
+  font-family: "Lucida Console", monospace;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 212, 255, 0.6);
+  background: linear-gradient(135deg, #00ff88, #00d4ff);
 }

@@ -61,10 +61,6 @@ button:hover {
   animation: fadeIn 0.5s ease-in;
 }
 
-.section.active {
-  display: block;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -311,4 +307,16 @@ button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 25px rgba(0, 212, 255, 0.6);
   background: linear-gradient(135deg, #00ff88, #00d4ff);
+}
+
+#home {
+  display: block !important;
+}
+
+.explore-grid {
+  display: grid !important;
+}
+
+.stat-grid {
+  display: flex !important;
 }

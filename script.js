@@ -5,6 +5,6 @@ function showSection(sectionId) {
   }
   
   document.getElementById(sectionId).style.display = 'block';
+  window.scrollTo(0, 0);
 }
-
 showSection('home');

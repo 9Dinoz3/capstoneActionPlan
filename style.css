@@ -15,11 +15,22 @@ h2 {
 }
 
 h3 {
+  font-size: 28px;
   text-align: center;
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.hook {
+  font-size: 28px;
+  line-height: 1.4;
+  margin: 40px auto;
+  max-width: 900px;
+  text-align: center;
+  color: #00d4ff;
+  font-weight: normal;
 }
 
 p {
@@ -75,16 +86,6 @@ button:hover {
   border-top: 1px solid rgba(0, 212, 255, 0.3);
   margin: 50px auto;
   max-width: 600px;
-}
-
-.hook {
-  font-size: 28px;
-  line-height: 1.4;
-  margin: 40px auto;
-  max-width: 900px;
-  text-align: center;
-  color: #00d4ff;
-  font-weight: normal;
 }
 
 .stat-grid {
@@ -308,3 +309,43 @@ button:hover {
   box-shadow: 0 6px 25px rgba(0, 212, 255, 0.6);
   background: linear-gradient(135deg, #00ff88, #00d4ff);
 }
+
+.robotDefinitionBox {
+  background: rgba(0, 255, 136, 0.1);
+  border-left: 4px solid #0088ff;
+  padding: 25px 35px;
+  margin: 40px auto;
+  max-width: 850px;
+  border-radius: 5px;
+}
+
+.robotDefinitionBox h4 {
+  margin-top: 0;
+  color: #0088ff;
+  font-size: 22px;
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.robotDefinitionBox p {
+  text-indent: 0;
+  margin-left: 0;
+  margin-bottom: 15px;
+  color: #e8e8e8;
+  line-height: 1.8;
+}
+
+.robotDefinitionBox p:last-child {
+  margin-bottom: 0;
+}
+
+.robotDefinitionBox em {
+  color: #00d4ff;
+  font-style: italic;
+}
+
+.robotDefinitionBox strong {
+  color: #0088ff;
+}
+

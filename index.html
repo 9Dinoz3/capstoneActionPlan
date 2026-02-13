@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Automation & The Workforce</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
@@ -9,22 +11,26 @@
 
 <body>
 
-  <h1>How is automation affecting the job market?</h1>
+  <header>
+    <h1>How is automation affecting the job market?</h1>
+    
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('roboticAutomation')">Robotic Automation</button>
+      <button onclick="showSection('aiAutomation')">AI Automation</button>
+      <button onclick="showSection('howToPrepare')">How to Prepare</button>
+    </nav>
+  </header>
 
-  <nav>
-    <button onclick="showSection('home')">Home</button>
-    <button onclick="showSection('roboticAutomation')">Robotic Automation</button>
-    <button onclick="showSection('aiAutomation')">AI Automation</button>
-    <button onclick="showSection('howToPrepare')">How to Prepare</button>
-  </nav>
-
-  <div id='home' class="section">
+  <!-- HOME PAGE -->
+  
+  <section id="home" class="section">
 
     <h2>Home</h2>
 
-    <h3 class="hook">
+    <p class="hook">
       Every minute, a robot enters the global workforce, reshaping the job market.
-    </h3>
+    </p>
 
     <div class="stat-grid">
       <div class="stat-card negative">
@@ -32,7 +38,7 @@
         <span class="stat-label">Jobs displaced by automation</span>
       </div>
 
-      <div class="stat-vs">VS</div>
+      <span class="stat-vs">VS</span>
 
       <div class="stat-card positive">
         <span class="stat-number">69M</span>
@@ -49,14 +55,14 @@
     <h3>Understanding the Impact on Your Career</h3>
 
     <p>
-      Over 542,000 robotic systems are installed annually around the world, which is more than double what it was just 10 years ago. Whether you’re planning to become a doctor, mechanic, retail worker, or even a police officer, automation will impact and change the way you do your job. Look at grocery stores for example, cash registers have essentially been fully replaced with self checkouts due to their speed and convenience when compared to human cashiers for customers. Companies have been installing hundreds of millions of automated systems to help cut costs and increase productivity reshaping the job market as we know it. This has made a lot of people believe that this could be the end of human workers, but I believe that automation will be a valuable tool to help human workers rather than fully replace them. This website explores both the drawbacks and benefits of automated systems, and how workers can adapt to these systems rather than be replaced by them.
+      Over 542,000 robotic systems are installed annually around the world, which is more than double what it was just 10 years ago. Whether you're planning to become a doctor, mechanic, retail worker, or even a police officer, automation will impact and change the way you do your job. Look at grocery stores for example, cash registers have essentially been fully replaced with self checkouts due to their speed and convenience when compared to human cashiers for customers. Companies have been installing hundreds of millions of automated systems to help cut costs and increase productivity reshaping the job market as we know it. This has made a lot of people believe that this could be the end of human workers, but I believe that automation will be a valuable tool to help human workers rather than fully replace them. This website explores both the drawbacks and benefits of automated systems, and how workers can adapt to these systems rather than be replaced by them.
     </p>
 
     <div class="success-box">
       <h4>When Robots Create Jobs</h4>
 
       <p>
-        In Europe robotic systems increased by over 4 times with robotic systems growing from only 100,000 units to over 400,000 units between the years of 1995 and 2015. Although it seems like that would’ve lowered employment, it actually helped it grow by over <strong>1.3%</strong>.
+        In Europe robotic systems increased by over 4 times with robotic systems growing from only 100,000 units to over 400,000 units between the years of 1995 and 2015. Although it seems like that would've lowered employment, it actually helped it grow by over <strong>1.3%</strong>.
       </p>
 
       <p>
@@ -64,7 +70,7 @@
       </p>
 
       <p>
-        In Europe, workers and companies invested in training workers to learn how to work with automated systems rather than trying to rapidly implement and replace human workers with these systems. Workers that got trained and learned how to work with these new technologies became more valuable and productive employees while workers that didn’t have access to training ended up getting replaced by these systems.
+        In Europe, workers and companies invested in training workers to learn how to work with automated systems rather than trying to rapidly implement and replace human workers with these systems. Workers that got trained and learned how to work with these new technologies became more valuable and productive employees while workers that didn't have access to training ended up getting replaced by these systems.
       </p>
     </div>
 
@@ -109,143 +115,270 @@
 
     </div>
 
-  </div>
+  </section>
 
-  <div id='roboticAutomation' class="section">
+  <!-- ROBOTIC AUTOMATION SECTION -->
+  
+  <section id="roboticAutomation" class="section">
+    
     <h2>Robotic Automation</h2>
-    <h3 class="hook">There are approximately 4.66 million industrial robots currently operating worldwide. A new robot is installed every 58 seconds, and by 2028, that is expected to increase to one every 45 seconds.</h3>
     
-    <hr class="section-divider">
-    
-      <h4 class="robot-definition-title">What are Robots?</h4>
-      
-      <p class="robot-definition">
-        <strong>RPA</strong> systems, or <strong>Robotic Process Automation</strong> systems, are machines designed to carry out tasks automatically by following programmed instructions. Unlike traditional machines that perform only one fixed function, robots can be reprogrammed to handle different tasks. Robotics systems are often used with sensors, cameras, and software to help them interact with their environment. Robots typically perform what are known as <strong>the three Ds:</strong> tasks that are <strong>dull, dirty, and dangerous</strong>. These include organizing products in warehouses, working in hazardous environments, and handling heavy or unsafe materials. By taking on this type of work, robots increase efficiency and safety, but they also change how human labor is used. As robots move beyond basic factory work and into more complex roles, their influence on everyday jobs continues to grow.
-      </p>
-    
-    <hr class="section-divider">
-  
-  <div class="robot-stat">
-      
-      <h3>Fields RPA is changing</h3>
+    <p class="hook">
+      There are approximately 4.66 million industrial robots currently operating worldwide. A new robot is installed every 58 seconds, and by 2028, that is expected to increase to one every 45 seconds.
+    </p>
 
-      <div class="robot-stat-grid">
-  <div class="robot-stat-card">
-    <h4>Manufacturing</h4>
-    <p>
-      Robots excel at tasks that humans struggle with. For example, robots can weld with perfect precision for hours without fatigue, work in extreme heat near molten metal, and lift massive parts that would injure workers. 38% of all industrial robotic installations are in the automotive manufacturing industries, with approximately 7.5 robots per 1,000 workers.
-    </p>
-  </div>
-  
-  <div class="robot-stat-card">
-    <h4>Warehouses</h4>
-    <p>
-      Robotic systems are helping revolutionize warehouses. Amazon's Kiva and Walmart's R5 units can move entire shelves of products directly to workers. This eliminates the 15+ miles employees used to need to walk each day. Instead of workers needing to lift heavy packages multiple times a day, they can stand at stations scanning items while robots do the heavy lifting for them. These systems work 24/7 and can sort products faster than humans ever could, helping to increase productivity in warehouses.
-    </p>
-  </div>
-</div>
-
-<div class="robot-stat-grid">
-  <div class="robot-stat-card">
-    <h4>Agriculture</h4>
-    <p>
-      Robotic systems that have 3D vision software are transforming farms and greenhouses. Companies like Robovision have developed robots that are able to identify what plants need to be harvested, where to plant bulbs with precision up to a millimeter, and are able to navigate through crops without damaging them. These robotic systems handle the repetitive bending, lifting, and sorting that destroys workers' backs during long harvest seasons. They can work in extreme weather conditions like blazing heat or freezing cold that would exhaust human laborers, allowing farmers to focus on planning what crops to grow, quality control, and managing operations rather than spending full days in the fields.
-    </p>
-  </div>
-  
-  <div class="robot-stat-card">
-    <h4>The Three Ds</h4>
-    <p>
-      Robots perform best in environments that are dull, dirty, or dangerous, where humans would struggle to work. Robots can defuse bombs, clean toxic waste sites, explore collapsed buildings during rescue operations, and can work in extreme temperatures that would kill humans within minutes. In industrial settings, robotic systems handle carcinogenic chemicals, work inside furnaces that can reach temperatures that are thousands of degrees, and enter confined spaces filled with hazardous gases. These aren't jobs that are being "stolen," they're jobs that were sending workers home with cancer, chronic injuries, or not sending them home at all. Robots are taking these risks so humans don't have to.
-    </p>
-  </div>
-</div>
-    
     <hr class="section-divider">
 
-<h3>The Reality</h3>
+    <h4 class="robot-definition-title">What are Robots?</h4>
 
-<div class="warning-box">
-  <p>Job Displacement Is Real</p>
-  
-  <div class="displacement-stats">
-    <div class="stat-item">
-      <span class="stat-big">1 : 6</span>
-      <p>One robot replaces six workers on average, according to a study conducted by MIT.</p>
-    </div>
-    
-    <div class="stat-item">
-      <span class="stat-big">0.39%</span>
-      <p>Employment decrease in communities with automated factories.</p>
-    </div>
-    
-    <div class="stat-item">
-      <span class="stat-big">0.77%</span>
-      <p>Wage decrease in regions affected by automation.</p>
-    </div>
-  </div>
-  
-  <p class="displacement-context">
-    These impacts hit hardest in smaller communities where automation is first being introduced. The jobs that disappeared were real, and a lot of employees were lost.
-  </p>
-</div>
-    
-<h3>The Outlook</h3>
+    <p>
+      <strong>Robotic Process Automation</strong>, or <strong>RPA</strong>, are systems that are designed to carry out tasks automatically by following pre-programmed instructions. These systems are often paired with sensors and softwares to help them work with or around their environments making an <strong>Intelligent Process Automation</strong>, or <strong>IPA</strong> systems. These robots typically will perform tasks known as <strong>the three Ds</strong> which are tasks that are either <strong>dull, dirty, or dangerous</strong> so that humans don't need to. RPA and IPA systems are helping revolutionize all kinds of industries by helping automate repetitive tasks or by helping keep employees safer by working in unsafe conditions for them allowing employees to focus on more complex and creative roles.
+    </p>
 
-<div class="outlook-box">
-  <p>There is positive spillover though</p>
-  
-  <div class="outlook-stats">
-    <div class="stat-item">
-      <span class="outlook-stat-big">1.75</span>
-      <p>There are 1.75 fewer injuries per 100 workers when a robot is introduced into the workplace</p>
-    </div>
-    
-    <div class="stat-item">
-      <span class="outlook-stat-big"> $1.69 billion</span>
-      <p> $1.69 billion dollars have been saved in injury costs due to robotic implementation annually in the United States.</p>
-    </div>
-    
-    <div class="stat-item">
-      <span class="outlook-stat-big">5%</span>
-      <p>There has been a 5% decrease in worker disabillities in industrial settings due to robotic implementations</p>
-    </div>
-  </div>
-  
-  <p class="outlook-context">
-    Although there are job losses and real downsides to robotic automation, there are also positive spillover benefits to industries as a whole. Industries have been made safer and more efficient, allowing humans to move away from dangerous, repetitive labor and into roles that require creativity, problem-solving, and oversight.
-  </p>
-</div>
+    <hr class="section-divider">
 
-      <div class="ai-cta">
+    <h3>Fields RPA is changing</h3>
+
+    <div class="robot-stat-grid">
+      <div class="robot-stat-card">
+        <h4>Manufacturing</h4>
         <p>
-          You've now know how robotic automation is reshaping industries, but automation isn't just physical anymore. AI is changing how companies make decisions, hire employees, and analyze data. Yet it comes with risks that robots don't have.
+          Robotics is helping redefine the manufacturing industry by helping to do dangerous or repetitive tasks for humans. Robotics systems are able to perform tasks like welding for hours without fatigue, they can work in extreme heat, and lift massive parts that could easily injure human workers. The automotive industry has the highest amount of robotic installations with there being 7.5 robots per 1,000 workers which helps keep workers safer by keeping them out of dangerous positions and allowing employees to shift to different jobs like quality control, system mechanics, or even robotic programmers.
         </p>
-        <button class="ai-cta-button" onclick="showSection('aiAutomation')">
-          Learn About AI Automation →
-        </button>
+      </div>
+
+      <div class="robot-stat-card">
+        <h4>Warehouses</h4>
+        <p>
+          Another industry robotic systems are changing are warehouses and storage buildings. Robotic systems like Amazon's Kiva unit are able to move entire shelves full of products to workers at speeds of 3 miles an hour helping save employees from lifting heavy packages and walking 15+ miles a day. Employees now can stand at work stations and have robots deliver packages to them to distribute to wherever they need to go. These systems are able to run 24/7 so packages can be sorted constantly to help keep things organized and when they need to be distributed moved out faster than previously possible.
+        </p>
+      </div>
+
+      <div class="robot-stat-card">
+        <h4>Agriculture</h4>
+        <p>
+          Agricultural industries are also benefiting from robotic systems. There are companies like Robovision that are creating robots with 3D vision and sensors on them to allow them to identify where they need to plant crops and when they need to be harvested. These robots can move with up to millimeter precision allowing them to carefully plant and harvest crops and carefully navigate through fields without damaging crops. These systems allow farmers to focus on quality control and planning what crops to grow and other management jobs rather than needing to spend multiple days harvesting crops and planting them during busy seasons.
+        </p>
+      </div>
+
+      <div class="robot-stat-card">
+        <h4>The Three Ds</h4>
+        <p>
+          Robots have huge success in environments that are dull, dirty, or dangerous where humans would struggle to work in. Robots are able to perform tasks like cleaning up toxic waste, defusing bombs, exploring collapsed buildings, and working around toxic gasses. In industrial settings robots are used to work in ovens or other areas with intense temperatures to help manufacture and work with large and heavy metal objects quicker and safer than humans would be able to. These systems are ensuring the safety of human employees by doing jobs that previously would give workers cancer, chronic injuries, or introducing them to life threatening situations.
+        </p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <h3>The Reality</h3>
+
+    <div class="warning-box">
+      <h3>Job Displacement Is Real</h3>
+
+      <div class="displacement-stats">
+        <div class="stat-item">
+          <span class="stat-big">1 : 6</span>
+          <p>One robot replaces six workers on average, according to a study conducted by MIT.</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-big">0.39%</span>
+          <p>Employment decrease in communities with automated factories.</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-big">0.77%</span>
+          <p>Wage decrease in regions affected by automation.</p>
+        </div>
+      </div>
+
+      <p class="displacement-context">
+        These impacts hit hardest in smaller communities where automation is first being introduced. The jobs that disappeared were real, and a lot of employees were lost.
+      </p>
+    </div>
+
+    <h3>The Outlook</h3>
+
+    <div class="outlook-box">
+      <h3>There is positive spillover though</h3>
+
+      <div class="outlook-stats">
+        <div class="stat-item">
+          <span class="outlook-stat-big">1.75</span>
+          <p>There are 1.75 fewer injuries per 100 workers when a robot is introduced into the workplace</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="outlook-stat-big">$1.69 billion</span>
+          <p>$1.69 billion dollars have been saved in injury costs due to robotic implementation annually in the United States.</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="outlook-stat-big">5%</span>
+          <p>There has been a 5% decrease in worker disabilities in industrial settings due to robotic implementations</p>
+        </div>
+      </div>
+
+      <p class="outlook-context">
+        Although there are job losses and real downsides to robotic automation, there are also positive spillover benefits to industries as a whole. Industries have been made safer and more efficient, allowing humans to move away from dangerous, repetitive labor and into roles that require creativity, problem-solving, and oversight.
+      </p>
+    </div>
+
+    <div class="ai-cta">
+      <p>
+        You've now learned about how robotic systems are reshaping industries and now you can see how AI is reshaping the future of the job market and the issues it may hold.
+      </p>
+      <button class="ai-cta-button" onclick="showSection('aiAutomation')">
+        Learn About AI Automation →
+      </button>
+    </div>
+
+  </section>
+
+  <!-- AI SECTION -->
+  
+  <section id="aiAutomation" class="section">
+    
+    <h2>Artificial Intelligence Automation</h2>
+    
+    <p class="hook">
+      Over 90% of workers trust AI systems to help them in their jobs with AI systems improving companies efficiency by 86% or more.
+    </p>
+
+    <hr class="section-divider">
+
+    <h4 class="ai-definition-title">What is AI?</h4>
+
+    <p>
+      <strong>AI</strong>, or <strong>Artificial Intelligence</strong>, are systems that analyze large sets of data to recognize patterns and make decisions based on previous knowledge. Unlike robotic systems which physically interact with their environment, AI systems operate invisibly and process information letting it make predictions, assist with tasks like data analysis, medical diagnosis, and even hiring decisions. Modern AI systems come in different forms with the most commonly used ones being <strong>Large Language Models</strong>, otherwise known as <strong>LLMs</strong>. LLMs are systems that are trained on massive amounts of text which allows them to understand context of words and information they are given and make sentences that make sense. However, AI systems cannot learn or improve on their own indefinitely, these systems require constant high quality human generated data and oversight to function properly, making human input essential to their operation.
+    </p>
+
+    <hr class="section-divider">
+
+    <h3>Fields AI is changing</h3>
+
+    <div class="ai-stat-grid">
+      <div class="ai-stat-card">
+        <h4>Data Analysis</h4>
+        <p>
+          AI systems excel at large scale data analysis and processing massive datasets. These systems analyze thousands of transactions, interactions, and market patterns in just minutes, a task that would have taken humans days or even weeks to complete manually. AI systems can also help by optimizing production schedules for manufacturing companies, assisting accounting professionals in finding discrepancies in financial data, and helping financial analysts forecast market trends by processing historical market trends to predict future outcomes. However, AI systems can only recognize and analyze patterns, they cannot interpret the meaning of those patterns and how they impact business strategies, understand the moods of clients and their needs, or make judgment calls about which trends matter and which ones do not.
+        </p>
+      </div>
+
+      <div class="ai-stat-card">
+        <h4>Healthcare</h4>
+        <p>
+          AI systems are transforming healthcare by helping analyze medical scans like X-rays, MRIs, and mammograms to detect patterns and abnormalities that might be overlooked by the human eye. These systems can notice microscopic details and by comparing thousands of previous cases in seconds help identify early stages of tumors, fractures, or tissue irregularities. Some AI diagnostic tools can detect certain types of cancers up to a year earlier than traditional methods by spotting pixel level changes in scans helping give patients extra time for treatment. AI systems are also helping automate the overwhelming amount of paperwork that medical professionals face. Doctors currently spend nearly two hours on documentation for every hour with patients. AI systems help transcribe patient visits in real time, automatically update medical records, and help process insurance claims, freeing up time for doctors to spend with patients answering questions and providing personalized care. These systems still require doctors to review diagnoses, make final treatment decisions, and provide the human connection and emotional support that patients need during vulnerable moments.
+        </p>
       </div>
       
+      <div class="ai-stat-card">
+        <h4>Customer Service</h4>
+        <p>
+          [ADD YOUR CONTENT HERE - This should be about AI chatbots, automated customer support, etc.]
+        </p>
+      </div>
+
+      <div class="ai-stat-card">
+        <h4>Another AI Field</h4>
+        <p>
+          [ADD YOUR CONTENT HERE - Pick another AI use case]
+        </p>
+      </div>
     </div>
-  
+
+    <hr class="section-divider">
+
+    <h3>The Reality</h3>
+
+    <div class="warning-box">
+      <h3>Job Displacement Is Real</h3>
+
+      <div class="displacement-stats">
+        <div class="stat-item">
+          <span class="stat-big">[AI STAT]</span>
+          <p>[AI-specific displacement data]</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-big">[AI STAT]</span>
+          <p>[AI-specific employment impact]</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="stat-big">[AI STAT]</span>
+          <p>[AI-specific wage impact]</p>
+        </div>
+      </div>
+
+      <p class="displacement-context">
+        [Update this with AI-specific context about job losses in call centers, content creation, etc.]
+      </p>
+    </div>
+
+    <h3>The Outlook</h3>
+
+    <div class="outlook-box">
+      <h3>There is positive spillover though</h3>
+
+      <div class="outlook-stats">
+        <div class="stat-item">
+          <span class="outlook-stat-big">[AI STAT]</span>
+          <p>[AI benefit - maybe productivity gains, error reduction, etc.]</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="outlook-stat-big">[AI STAT]</span>
+          <p>[Another AI benefit]</p>
+        </div>
+
+        <div class="stat-item">
+          <span class="outlook-stat-big">[AI STAT]</span>
+          <p>[Another AI benefit]</p>
+        </div>
+      </div>
+
+      <p class="outlook-context">
+        [Update with AI-specific positive outcomes]
+      </p>
+    </div>
+
+    <div class="ai-cta">
+      <p>
+        You've now learned how both robotic and AI automation are reshaping industries. Now discover how you can prepare yourself to thrive in this changing landscape.
+      </p>
+      <button class="cta-button" onclick="showSection('howToPrepare')">
+        Learn How to Prepare →
+      </button>
+    </div>
+
+  </section>
+
+  <section id="howToPrepare" class="section">
+    <h2>How to Prepare</h2>
+    <p class="hook">[Your hook here]</p>
+    
+    <div class="explore-section">
+      <h3>Build Your Future-Proof Skills</h3>
+      
+      <div class="explore-grid">
+        <div class="explore-card">
+          <h4>Technical Skills</h4>
+          <p>Learn programming, data analysis, or robotics maintenance</p>
+        </div>
+        
+        <div class="explore-card">
+          <h4>Soft Skills</h4>
+          <p>Develop creativity, critical thinking, and emotional intelligence</p>
+        </div>
+      </div>
     </div>
     
-  </div>
-
-  <div id='aiAutomation' class="section">
-    <h2>Artificial Intelligence Automation</h2>
-    <h3 class="hook">Hook</h3>
-    <p class="ai1">test</p>
-  </div>
-
-
-  <div id='howToPrepare' class="section">
-    <h2>How to Prepare</h2>
-    <h3 class="hook">Hook</h3>
-    <p class="prepare1">test</p>
-  </div>
+  </section>
 
   <script src="script.js"></script>
 
 </body>
+
 </html>

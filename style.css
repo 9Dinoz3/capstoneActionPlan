@@ -4,6 +4,7 @@ body {
   background: #000028;
   font-family: "Helvetica", Sans-serif;
   color: white;
+  line-height: 1.8;
 }
 
 h1 {
@@ -25,7 +26,8 @@ h3 {
 p {
   text-indent: 50px;
   margin: 0 15px;
-  line-height: 1.8;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 /* navigation */
@@ -81,7 +83,7 @@ button:hover {
 
 .hook {
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 40px auto;
   max-width: 900px;
   text-align: center;
@@ -382,8 +384,10 @@ button:hover {
   line-height: 1.6;
   color: #e8e8e8;
   margin: 15px 0;
-  text-indent: 0;
+  text-indent: 30px;
   text-align: left;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .explore-cta {

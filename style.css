@@ -535,7 +535,7 @@ button:hover {
   }
 
   /* Paragraphs - reduce massive side margins */
-  
+
   p {
     margin-left: 20px;
     margin-right: 20px;
@@ -543,7 +543,7 @@ button:hover {
   }
 
   /* Hook text */
-  
+
   .hook {
     font-size: 20px;
     margin: 30px 20px;
@@ -551,7 +551,7 @@ button:hover {
   }
 
   /* Navigation */
-  
+
   nav {
     gap: 15px;
     padding: 15px 10px;
@@ -566,7 +566,7 @@ button:hover {
   }
 
   /* Stats */
-  
+
   .stat-number {
     font-size: 42px;
   }
@@ -598,7 +598,7 @@ button:hover {
   }
 
   /* Grids */
-  
+
   .explore-grid,
   .robot-stat-grid,
   .ai-stat-grid {
@@ -608,7 +608,7 @@ button:hover {
   }
 
   /* Cards */
-  
+
   .explore-card,
   .robot-stat-card,
   .ai-stat-card {
@@ -631,7 +631,7 @@ button:hover {
   }
 
   /* Boxes */
-  
+
   .success-box,
   .warning-box,
   .outlook-box {
@@ -646,7 +646,7 @@ button:hover {
   }
 
   /* CTA buttons */
-  
+
   .cta-button,
   .ai-cta-button {
     padding: 15px 30px;
@@ -662,7 +662,7 @@ button:hover {
   }
 
   /* Intro text */
-  
+
   .explore-intro,
   .robot-stat-intro,
   .ai-stat-intro {
@@ -671,16 +671,57 @@ button:hover {
   }
 
   /* Section divider */
-  
+
   .section-divider {
     margin: 30px auto;
   }
 
   /* Titles */
-  
+
   .robot-definition-title,
   .ai-definition-title {
     font-size: 24px;
     padding: 0 15px;
+  }
+}
+
+.stat-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 50px auto;
+  flex-wrap: wrap;
+}
+
+/* VS Mobile Fix */
+
+.stat-vs {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "Helvetica", Sans-serif;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .stat-grid {
+    justify-content: center;
+  }
+
+  .stat-vs {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin: 20px 0;
+  }
+
+  .stat-card:nth-child(1) {
+    order: 1;
+  }
+
+  .stat-card:nth-child(3) {
+    order: 3;
   }
 }
